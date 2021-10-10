@@ -24,6 +24,7 @@
 
 <body>
 	<div class="header text-white">
+		<div class="swiper-pagination"></div>
 		<div class="swiper mainSwiper">
 			<div class="toner"></div>
 			<div class="swiper-wrapper">
@@ -31,14 +32,14 @@
 				<div class="swiper-slide" style="background-image: url('./images/dist/slide2.jpg');"></div>
 				<div class="swiper-slide" style="background-image: url('./images/dist/slide3.jpg');"></div>
 			</div>
-			<div class="swiper-pagination"></div>
+			
 		</div>
-		<div class="container">
+		<div class="container mb-3">
 			<div class="row justify-content-between">
-				<div class="col-md-2">
-					<img src="./images/dist/logo.png" alt="logo">
+				<div class="col-md-2 col-sm-3">
+					<img class="logo" src="./images/dist/logo.png" alt="logo">
 				</div>
-				<div class="col-md-4 text-right">
+				<div class="col-xl-4 col-md-6 col-sm-7 text-right">
 					<p class="mb-2">Адрес склада</p>
 					<p class="mb-2 bold">
 						Воронежская область,<br>Рамонский район, М-4 Дон,<br>492-й километр
@@ -49,14 +50,14 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-5">
+				<div class="col-lg-1"></div>
+				<div class="col-xl-6 col-lg-7">
 					<h1 class="h1 mb-2">Продаем и Покупаем <span class="brown">поддоны</span></h1>
 					<p class="light">Осуществляем доставку по <br> г. Воронеж и всему ЦФО</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-1"></div>
+				<div class="col-lg-1"></div>
 				<div class="col-md-3 mt-5">
 					<a href="#" class="btn theme_1">Подробнее</a>
 				</div>
@@ -64,7 +65,7 @@
 		</div>
 		<div class="container mt-5">
 			<div class="row justify-content-center">
-				<div class="col-md-8">
+				<div class="col-lg-8">
 					<div class="row justify-content-between">
 						<div class="col-auto svg-plus-text">
 							<svg class="svg" width="50" height="50" viewBox="0 0 50 50" fill="none"
@@ -122,7 +123,106 @@
 		</div>
 	</div>
 
-
+<section class="bg-grey default-padding min100vh">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-6">
+				<h2 class="h2 heading-decor mb-3">наши клиенты</h2>
+				<p class="light mb-75">
+					Мы всегда рады новым партнерам и открыты для всех, вот примеры компаний, где пригодилась наша
+					продукция.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-5">
+				<div class="row">
+					<div class="col-lg-6 ">
+						<div class="presentation-block">
+							<svg class="svg" width="100" height="100" fill="none" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path fill="url(#a)" fill-opacity=".7" d="M0 0h100v100H0z" />
+								<defs>
+									<pattern id="a" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#b" transform="scale(.01)" />
+									</pattern>
+									<image id="b" width="100" height="100"
+										xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAE2UlEQVR4nO2dy2tdRRzHPz0mglgfKBYTW8GN2pbotptWEaU7NVmpG0VoMVGrLkvR/6CrrlpfCxe6sQVXokSw0I0oJPWBgmjxhdKqpA1NGmniYu6l986dmztnzsycmXN+HxjIffx+8/ve73nMmTP3BgRBEARBEARBEARBEARBEARBEJrPRsPbCvA18AZws6fPLCh1f2Ax20/A/X4+tjBsQRXaJn4GHgQu1V2IiaLuAmrgHuCVuotoMxPAp/Qfus7WWpHAJP2GXK63nOFsqbuAiOjnyiS1t/EckjRjpDfKSnLLjYXsIYkhhiSGGJIYY7T8mJ0asockRpsNOQMsU33Cchn4FjgGPBBVQebEmlF+D7gth0L1FpuY2n4E7suh0LYYsgGcR03zJ19oKoZ8A0w5xOnsAA6hDNDf+1vn9UqFtsUQGzNMccO4HZg3vH8BuMGt5GbjukGUiRsHPjDEHC9bbBuIYQjA9cAnhrinyhTbBmIZAmrYe06Lu0SFkVcTiWkIwB5gTYtdxOJ80rST9zBiGwJw2BB/rGyHYoifOFATtx8ZcjxdpkMxxE9clztQ1yO9Of5FLUey6lAM8RPXy17gPy3PF6gRWWup0xCAI4ZcRyvky566DSmAj7Vc68CTFXJmTd2GAGwDftfy/UXF6fpcScEQgH0Mnk/6hsJNO3kPIxVDAF7Xcq4B9w7rUAzxE7cZ48D3Wt4TwzoUQ/zEjeJxLe8ycIupQzHET9woCuAXLfdsgbq899GaykXtse2NrVGsA6e05/Z7yp0Frlv6aS3O9tavDc9ouc95ypsFroY8Z4gN1VYq6MsOV0MK4DNDfKiW3cnZlSo6byWeKWKIJQXq8HUaWDLk89JM31Nv6ogpVZ19dbV5sXWSiCGJIYYkhhiSGGJIYoghiSGGJMZYoLx3AzPAY6j1rHd2nv8T+AG1GPkk8Gug/kMRRZfPK/UdwLsMrmk1tTXgHWB7xT5tqaIzpK5gUyczwD8WBevtb2C6Qr+2uOoMrSuIIc8DVx2K7rZ1YNaxb1tcdMbQ5d2QmSFFLwAvAzuBGzttF+r7eIuG918l7J5SVmcsXV4NmQQuaPErwAE2H8EVwEFgVYs9j/pJvhCU0RlTl1dD3jIUva9E/EOG4k9sGuFOGZ0xdXkzZNLQ6YES8V1mtRyrhNlLbHXG1jVQ10XtCdvh2kta3AJuF5oF6ldCe3PNOeQZha0hMXVNaa8vFcB32puOY2fKI9rjt1GjirKsd2J7edQhjy9i6ZoC3tdeXwR4kcGtx6XtdCi6yy5PNYRoMXU9C+pbPF95KHxrhcJv8tB/qBZL1zw9h8YJ4MtMCm+iIfOolS19jKNGBmdQX3IvW3iVXXu3Q3+xWihdS8DnqJUsXmbdT2odHKqQ6zUt14eVq3MnW1368HARN6evQ/3Dld5cIYa9tmSra4LBC6iDDnnmtBwrXLvPUAdZ69KnGFZR0wa2PEy8qZMyZKtrgsFJuFXU4GDUJNwc5km4OveOLlnrmsY8TX0W9Z9sdqOmqLd2/n6VwWPrRifHE7GKtiBrXT5u5LwQu2gLstY1jbptWbboC6T9awZZ67oLdUK8wuiCrwBvoqa7UyearlBL8rejtqz9qOUy3fsAf3Btucwp1M8W5URTdQmCIAiCIAiCIAiCYOR/y7uPfyKSR38AAAAASUVORK5CYII=" />
+								</defs>
+							</svg>
+							<p class="description">
+								Логистические<br>компании
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6 ">
+						<div class="presentation-block">
+							<svg class="svg" width="100" height="100" viewBox="0 0 100 100" fill="none"
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="100" height="100" fill="url(#pattern0)" fill-opacity="0.7" />
+								<defs>
+									<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image0" transform="scale(0.015625)" />
+									</pattern>
+									<image id="image0" width="64" height="64"
+										xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAC70lEQVR4nO2au24UMRiFv10lwAaJiwQ1BRU1RSRE6ghoCFQ08BrUNNkQSh4gvABQICTqQImgCgU0KYKIQLApWBrEUsxvdtZ4bI93ZrxzOZI1mfmPbyf28Xi80KFDhw71xDFgC/gMTBzpABhKnsZgiLvjetqM0tKScEDSqSse3KtMR8IM+gU3qkqo4ezTh55cl0tqSxRsk38KbEVpaUlYIp8IDyVPo3CapHMjC+dIOKdMwTp7AMCKXH9aOGO5njQF6y6A6tTYwlGxFVOw7gKoTnUCWDidABp3BiECvAReBOQrAwO5/rJwrAKErIvXAvKUhdZPAbUK+CyDjRSg9SNgIQSIaYpRTFBHTFNUnQoWoClTwGaCSpyBKegS4DjwhERFta1UyLovO42BHWmbzwhQ4hg3Q64p8AC46+BUjQFwDzikgBFgwyrwW9Jq6rlrJJSNdLs+St0bFv6GcJ7lqeQEsCcZh1rsPfDOcl8F9C/C6xbuunBehVSwRyJGGn1mvUO/rwLpf9AEWLNw14Sz61t41tBfNKh2ToDrFt5l4bx1FbhM8uFwRHWOXlQakYxak6lfEs4HlwCPFqAj86ZtQ78uSGzfJcChEH1OWhYN6uTniyF2XmJfTRl1M9Of1QXq5MfUduurcBohJy2LlkwnP33gj6SeIf4PS1JA7E6EpiwThOmrvHMUkCqwLvBp7zfhnNMDdZzvIcj0gU6AihsSC3MJ8IbpPNv1eB4rnw1zCTDJ+XesfDao7wWtXQWeC+emHug8wCNzXTzA9pJ0Rzit9QCF1nrApnDu64G2eEDml+G2CJBpgmX/bq5P8lM2E45ItqhVwHo4okOfU6GufBv4QbYzfwduGfLlrS/PlnlHr8xnBIS68mPgDIkIJpwVztOC6vNBpauAq5yq6gG4IZz/jvFbb4JlvgmGojG7wVCUUZ/3l2FVeNM84KJwPumBzgMqbkgsRHsThGS9j41MAXok7lrH88Ai8LpPvba+RaPNfe8AwF898jwsoOeN6wAAAABJRU5ErkJggg==" />
+								</defs>
+							</svg>
+							<p class="description">
+								Производственные<br>компании
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6 ">
+						<div class="presentation-block">
+							<svg class="svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="100" height="100" fill="url(#pattern0)" fill-opacity="0.7"/>
+								<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0" transform="scale(0.01)"/>
+								</pattern>
+								<image id="image0" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAADhElEQVR4nO2dT28NURjGfy1X2oVGW0LCRgk7BN2JJmz4FOJLsLFiowsWEgtC0tjxFbquHRtKQrCxE6ptmiskrcVM6/a9d87MPXdm7nvr+SWzOHfe58yb88yZc878aUEIIYQQQgghhBBCiMFgqEDMRuVZ/F8E23y4rixEMWSIM2SIM3ZHaIqMO+IfXY3B6iHOkCHOkCHOkCHOqMqQRmTdg6KrjJhZllbuFeLq7BD5hhysJYv/i4nQzjxDzpSYiEg4FdqZZ4gVPydZqYc2S178Tte9MPGnO9SxRZ4hVvwmJ160Y9tMhvSZrgwJsQf4TTLN3dymCug2zFaUnaqbMvFN4pYbnDQVrVL8CaPnBqpbNwSsGM3xrODQJeuYKS8WTEBsZwN4Z36LMsSKPsRmJPhoyvZk36KbHvI5Oh1h2y7KkKM5lYrifDLlzMlRyJBJU/4SnY6wbbc/KzBkiL3n8i06HfHdlMezAkOG7DPln9HpiCVTzjQkRJPtc+eRgjrv64J+6EaMppkVGOohdt96wYOLdhqmnLnADhmyasr2EiaKc8iUV7ICQ4Z8NeUT0emIw6Zs23aLkCH2LuXF6HTEBVOOumt+ne0D0XtgV45mlPZBb7TAserWNTro7HW+LF2D5LZTq+ZagWO1MQ78MhXdCMQfAV52SHiB9i7bT90BYL6Dbj7dV7bumYlv0sN4fN9Utg48JHnIMgqMAeeBWZJJgE229db93TR2rA+6vcA54A7JmiBLtwTcBs6mmljdeHrsB2mbtcbeCzV43vONCdpXmaI3JoEfWTur+KRtneSMGgJuUfzdr7p1f4CbqW6W4k/xYnWb9Pw5R1Y37bS9AmZatDPAa4e6BWC6RTdN5/GoLF3r1jO2wjmSWcMayQJnEXgCXKHz2TkMXAWeprErfdAtA2+BR8Alsl/nuQw8TmOXe9CtkbTRHF0aEnPJ0hdU3dFV++ndXmfIEGfIEGfIEGfIEGdEvdKYQSlz7BLJms1UlWcps0/1EGfIEGfIEGeUOYZY6l7Rx44NsXlWMhaphzhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjijyrdOvL3JOBCohzhDhjhDhjijzDFE3x6WgHqIM2SIM2SIM2SIM2SIM/T/1OtHf8lhkJAhzpAhQgghxA7hLzCSbeSMI11aAAAAAElFTkSuQmCC"/>
+								</defs>
+								</svg>
+								<p class="description">
+									Торговые<br>сети
+								</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="presentation-block">
+							<svg class="svg" width="100" height="100" viewBox="0 0 100 100" fill="none"
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="100" height="100" fill="url(#pattern0)" fill-opacity="0.7" />
+								<defs>
+									<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image0" transform="scale(0.01)" />
+									</pattern>
+									<image id="image0" width="100" height="100"
+										xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAADhElEQVR4nO2dT28NURjGfy1X2oVGW0LCRgk7BN2JJmz4FOJLsLFiowsWEgtC0tjxFbquHRtKQrCxE6ptmiskrcVM6/a9d87MPXdm7nvr+SWzOHfe58yb88yZc878aUEIIYQQQgghhBBCiMFgqEDMRuVZ/F8E23y4rixEMWSIM2SIM3ZHaIqMO+IfXY3B6iHOkCHOkCHOkCHOqMqQRmTdg6KrjJhZllbuFeLq7BD5hhysJYv/i4nQzjxDzpSYiEg4FdqZZ4gVPydZqYc2S178Tte9MPGnO9SxRZ4hVvwmJ160Y9tMhvSZrgwJsQf4TTLN3dymCug2zFaUnaqbMvFN4pYbnDQVrVL8CaPnBqpbNwSsGM3xrODQJeuYKS8WTEBsZwN4Z36LMsSKPsRmJPhoyvZk36KbHvI5Oh1h2y7KkKM5lYrifDLlzMlRyJBJU/4SnY6wbbc/KzBkiL3n8i06HfHdlMezAkOG7DPln9HpiCVTzjQkRJPtc+eRgjrv64J+6EaMppkVGOohdt96wYOLdhqmnLnADhmyasr2EiaKc8iUV7ICQ4Z8NeUT0emIw6Zs23aLkCH2LuXF6HTEBVOOumt+ne0D0XtgV45mlPZBb7TAserWNTro7HW+LF2D5LZTq+ZagWO1MQ78MhXdCMQfAV52SHiB9i7bT90BYL6Dbj7dV7bumYlv0sN4fN9Utg48JHnIMgqMAeeBWZJJgE229db93TR2rA+6vcA54A7JmiBLtwTcBs6mmljdeHrsB2mbtcbeCzV43vONCdpXmaI3JoEfWTur+KRtneSMGgJuUfzdr7p1f4CbqW6W4k/xYnWb9Pw5R1Y37bS9AmZatDPAa4e6BWC6RTdN5/GoLF3r1jO2wjmSWcMayQJnEXgCXKHz2TkMXAWeprErfdAtA2+BR8Alsl/nuQw8TmOXe9CtkbTRHF0aEnPJ0hdU3dFV++ndXmfIEGfIEGfIEGfIEGdEvdKYQSlz7BLJms1UlWcps0/1EGfIEGfIEGeUOYZY6l7Rx44NsXlWMhaphzhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjijyrdOvL3JOBCohzhDhjhDhjijzDFE3x6WgHqIM2SIM2SIM2SIM2SIM/T/1OtHf8lhkJAhzpAhQgghxA7hLzCSbeSMI11aAAAAAElFTkSuQmCC" />
+								</defs>
+							</svg>
+							<p class="description">
+								Распределительные<br>центры
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4">
+				<div class="block-with-img">
+					<img src="./images/src/pic1.jpg" alt="img">
+					<p class="px14 bold mb-3">О нашей компании</p>
+					<p class="px12 light">Don Поддон - это качество выполнения поставленных задач, внимание и качество обслуживания клиентов. Мы покумаем, ремонтируем и продаем поддоны 24/7. Так что с радостью примем ваш звонок по номеру:
+						<br><span class="semibold">8 (930) 405 - 50 - 05</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>
