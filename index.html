@@ -5,7 +5,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+	<!-- <base href="/">  -->
 
 	<title>
 		Дон поддон
@@ -23,8 +23,8 @@
 </head>
 
 <body>
-	<div class="header text-white">
-		<div class="swiper-pagination"></div>
+	<div  class="header text-white">
+		<div class="swiper-pagination d-none d-sm-flex"></div>
 		<div class="swiper mainSwiper">
 			<div class="toner"></div>
 			<div class="swiper-wrapper">
@@ -34,21 +34,37 @@
 			</div>
 			
 		</div>
-		<div class="container mb-3">
-			<div class="row justify-content-between">
-				<div class="col-md-2 col-sm-3">
+		<div class="container mb-auto mb-sm-3 mob-header">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-md-2 col-sm-3 col-3">
 					<img class="logo" src="./images/dist/logo.png" alt="logo">
 				</div>
-				<div class="col-xl-4 col-md-6 col-sm-7 text-right">
+				<div class="col-xl-4 col-md-6 col-sm-7 d-sm-block d-none text-right">
 					<p class="mb-2">Адрес склада</p>
 					<p class="mb-2 bold">
 						Воронежская область,<br>Рамонский район, М-4 Дон,<br>492-й километр
 					</p>
 					<p class="px14 black"><a href="tel:8(930)405-50-05">Тел. 8 (930) 405 - 50 - 05</a></p>
 				</div>
+				<div class="col-auto d-sm-none burger-wrapper">
+					<div class="burger ">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="mob-menu">
+				<ul class="mob-nav">
+					<li class="mob-nav-item"><a href="#clients">Клиенты</a></li>
+					<li class="mob-nav-item"><a href="#buy">Выкуп<br>поддонов</a></li>
+					<li class="mob-nav-item"><a href="#">Ремонт<br>поддонов</a></li>
+					<li class="mob-nav-item"><a href="#">Комплектующие</a></li>
+					<li class="mob-nav-item"><a href="#">Контакты</a></li>
+				</ul>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container ">
 			<div class="row">
 				<div class="col-lg-1"></div>
 				<div class="col-xl-6 col-lg-7">
@@ -58,12 +74,12 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-1"></div>
-				<div class="col-md-3 mt-5">
+				<div class="col-md-3 col-6 mt-4 mt-sm-5">
 					<a href="#" class="btn theme_1">Подробнее</a>
 				</div>
 			</div>
 		</div>
-		<div class="container mt-5">
+		<div class="container mt-5 d-none d-sm-block">
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="row justify-content-between">
@@ -123,12 +139,12 @@
 		</div>
 	</div>
 
-<section class="bg-grey default-padding min100vh">
+<section id="clients" class="bg-grey default-padding min100vh">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-1"></div>
 			<div class="col-lg-6">
-				<h2 class="h2 heading-decor mb-3">наши клиенты</h2>
+				<h2 class="h2 heading-decor mb-2">наши клиенты</h2>
 				<p class="light mb-75">
 					Мы всегда рады новым партнерам и открыты для всех, вот примеры компаний, где пригодилась наша
 					продукция.
@@ -137,73 +153,58 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-1"></div>
-			<div class="col-lg-5">
-				<div class="row">
-					<div class="col-lg-6 ">
+			<div class="col-lg-6">
+				<div class="row justify-content-center">
+					<div class="col-sm-6 col-10 ">
 						<div class="presentation-block">
-							<svg class="svg" width="100" height="100" fill="none" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink">
-								<path fill="url(#a)" fill-opacity=".7" d="M0 0h100v100H0z" />
-								<defs>
-									<pattern id="a" patternContentUnits="objectBoundingBox" width="1" height="1">
-										<use xlink:href="#b" transform="scale(.01)" />
-									</pattern>
-									<image id="b" width="100" height="100"
-										xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAE2UlEQVR4nO2dy2tdRRzHPz0mglgfKBYTW8GN2pbotptWEaU7NVmpG0VoMVGrLkvR/6CrrlpfCxe6sQVXokSw0I0oJPWBgmjxhdKqpA1NGmniYu6l986dmztnzsycmXN+HxjIffx+8/ve73nMmTP3BgRBEARBEARBEARBEARBEARBEJrPRsPbCvA18AZws6fPLCh1f2Ax20/A/X4+tjBsQRXaJn4GHgQu1V2IiaLuAmrgHuCVuotoMxPAp/Qfus7WWpHAJP2GXK63nOFsqbuAiOjnyiS1t/EckjRjpDfKSnLLjYXsIYkhhiSGGJIYY7T8mJ0asockRpsNOQMsU33Cchn4FjgGPBBVQebEmlF+D7gth0L1FpuY2n4E7suh0LYYsgGcR03zJ19oKoZ8A0w5xOnsAA6hDNDf+1vn9UqFtsUQGzNMccO4HZg3vH8BuMGt5GbjukGUiRsHPjDEHC9bbBuIYQjA9cAnhrinyhTbBmIZAmrYe06Lu0SFkVcTiWkIwB5gTYtdxOJ80rST9zBiGwJw2BB/rGyHYoifOFATtx8ZcjxdpkMxxE9clztQ1yO9Of5FLUey6lAM8RPXy17gPy3PF6gRWWup0xCAI4ZcRyvky566DSmAj7Vc68CTFXJmTd2GAGwDftfy/UXF6fpcScEQgH0Mnk/6hsJNO3kPIxVDAF7Xcq4B9w7rUAzxE7cZ48D3Wt4TwzoUQ/zEjeJxLe8ycIupQzHET9woCuAXLfdsgbq899GaykXtse2NrVGsA6e05/Z7yp0Frlv6aS3O9tavDc9ouc95ypsFroY8Z4gN1VYq6MsOV0MK4DNDfKiW3cnZlSo6byWeKWKIJQXq8HUaWDLk89JM31Nv6ogpVZ19dbV5sXWSiCGJIYYkhhiSGGJIYoghiSGGJMZYoLx3AzPAY6j1rHd2nv8T+AG1GPkk8Gug/kMRRZfPK/UdwLsMrmk1tTXgHWB7xT5tqaIzpK5gUyczwD8WBevtb2C6Qr+2uOoMrSuIIc8DVx2K7rZ1YNaxb1tcdMbQ5d2QmSFFLwAvAzuBGzttF+r7eIuG918l7J5SVmcsXV4NmQQuaPErwAE2H8EVwEFgVYs9j/pJvhCU0RlTl1dD3jIUva9E/EOG4k9sGuFOGZ0xdXkzZNLQ6YES8V1mtRyrhNlLbHXG1jVQ10XtCdvh2kta3AJuF5oF6ldCe3PNOeQZha0hMXVNaa8vFcB32puOY2fKI9rjt1GjirKsd2J7edQhjy9i6ZoC3tdeXwR4kcGtx6XtdCi6yy5PNYRoMXU9C+pbPF95KHxrhcJv8tB/qBZL1zw9h8YJ4MtMCm+iIfOolS19jKNGBmdQX3IvW3iVXXu3Q3+xWihdS8DnqJUsXmbdT2odHKqQ6zUt14eVq3MnW1368HARN6evQ/3Dld5cIYa9tmSra4LBC6iDDnnmtBwrXLvPUAdZ69KnGFZR0wa2PEy8qZMyZKtrgsFJuFXU4GDUJNwc5km4OveOLlnrmsY8TX0W9Z9sdqOmqLd2/n6VwWPrRifHE7GKtiBrXT5u5LwQu2gLstY1jbptWbboC6T9awZZ67oLdUK8wuiCrwBvoqa7UyearlBL8rejtqz9qOUy3fsAf3Btucwp1M8W5URTdQmCIAiCIAiCIAiCYOR/y7uPfyKSR38AAAAASUVORK5CYII=" />
-								</defs>
+							<svg class="svg" width="100" height="100" viewBox="0 0 100 100" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M92.9016 43.5825L75.2703 40.8661L64.5256 23.3133C63.9616 22.3946 63.17 21.637 62.2274 21.1138C61.2848 20.5906 60.2231 20.3195 59.1451 20.3268L14.1143 20.6856C12.815 20.6966 11.5514 21.112 10.499 21.8741C9.44667 22.6363 8.65786 23.7073 8.24219 24.9383L3.125 40.1124V75H13.8684C14.7035 77.7149 16.3871 80.0904 18.6718 81.778C20.9565 83.4655 23.7221 84.3761 26.5625 84.3761C29.4029 84.3761 32.1685 83.4655 34.4532 81.778C36.7379 80.0904 38.4215 77.7149 39.2566 75H59.1809C60.016 77.7149 61.6996 80.0904 63.9843 81.778C66.269 83.4655 69.0346 84.3761 71.875 84.3761C74.7154 84.3761 77.481 83.4655 79.7657 81.778C82.0504 80.0904 83.734 77.7149 84.5691 75H96.875V48.2153C96.8801 47.0944 96.4813 46.0092 95.7516 45.1584C95.0219 44.3076 94.0101 43.7481 92.9016 43.5825ZM43.75 26.6993L59.1949 26.5762L67.8082 40.6479L43.75 40.6395V26.6993ZM14.1643 26.9352L37.5 26.7493V40.6374L9.54707 40.6274L14.1643 26.9352ZM26.5625 78.125C25.1719 78.125 23.8124 77.7127 22.6561 76.9401C21.4999 76.1675 20.5986 75.0693 20.0665 73.7845C19.5343 72.4998 19.3951 71.086 19.6664 69.7221C19.9377 68.3581 20.6073 67.1053 21.5907 66.122C22.574 65.1386 23.8268 64.469 25.1908 64.1977C26.5547 63.9264 27.9684 64.0656 29.2532 64.5978C30.538 65.1299 31.6362 66.0312 32.4088 67.1874C33.1814 68.3437 33.5938 69.7031 33.5938 71.0938C33.5917 72.958 32.8502 74.7452 31.5321 76.0634C30.2139 77.3815 28.4267 78.123 26.5625 78.125ZM71.875 78.125C70.4844 78.125 69.1249 77.7127 67.9687 76.9401C66.8124 76.1675 65.9111 75.0693 65.379 73.7845C64.8468 72.4998 64.7076 71.086 64.9789 69.7221C65.2502 68.3581 65.9198 67.1053 66.9032 66.122C67.8865 65.1386 69.1393 64.469 70.5033 64.1977C71.8672 63.9264 73.281 64.0656 74.5657 64.5978C75.8505 65.1299 76.9487 66.0312 77.7213 67.1874C78.4939 68.3437 78.9062 69.7031 78.9062 71.0938C78.9042 72.958 78.1627 74.7452 76.8446 76.0634C75.5264 77.3815 73.7392 78.123 71.875 78.125ZM90.625 68.75H84.9449C84.3959 65.6832 82.7858 62.907 80.3964 60.9075C78.0071 58.9079 74.9906 57.8123 71.875 57.8123C68.7594 57.8123 65.7429 58.9079 63.3536 60.9075C60.9642 62.907 59.3542 65.6832 58.8051 68.75H39.6324C39.0833 65.6832 37.4733 62.907 35.0839 60.9075C32.6946 58.9079 29.6781 57.8123 26.5625 57.8123C23.4469 57.8123 20.4304 58.9079 18.0411 60.9075C15.6517 62.907 14.0417 65.6832 13.4926 68.75H9.375V46.8801L73.9309 46.9834L90.625 49.5555V68.75Z"
+									fill="black" fill-opacity="0.6" />
 							</svg>
 							<p class="description">
 								Логистические<br>компании
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-6 ">
-						<div class="presentation-block">
-							<svg class="svg" width="100" height="100" viewBox="0 0 100 100" fill="none"
-								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<rect width="100" height="100" fill="url(#pattern0)" fill-opacity="0.7" />
+					<div class="col-sm-6 col-10 ">
+						<div class="presentation-block ">
+							<svg class="svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="100" height="100" fill="url(#pattern0)" fill-opacity="0.7"/>
 								<defs>
-									<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-										<use xlink:href="#image0" transform="scale(0.015625)" />
-									</pattern>
-									<image id="image0" width="64" height="64"
-										xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAC70lEQVR4nO2au24UMRiFv10lwAaJiwQ1BRU1RSRE6ghoCFQ08BrUNNkQSh4gvABQICTqQImgCgU0KYKIQLApWBrEUsxvdtZ4bI93ZrxzOZI1mfmPbyf28Xi80KFDhw71xDFgC/gMTBzpABhKnsZgiLvjetqM0tKScEDSqSse3KtMR8IM+gU3qkqo4ezTh55cl0tqSxRsk38KbEVpaUlYIp8IDyVPo3CapHMjC+dIOKdMwTp7AMCKXH9aOGO5njQF6y6A6tTYwlGxFVOw7gKoTnUCWDidABp3BiECvAReBOQrAwO5/rJwrAKErIvXAvKUhdZPAbUK+CyDjRSg9SNgIQSIaYpRTFBHTFNUnQoWoClTwGaCSpyBKegS4DjwhERFta1UyLovO42BHWmbzwhQ4hg3Q64p8AC46+BUjQFwDzikgBFgwyrwW9Jq6rlrJJSNdLs+St0bFv6GcJ7lqeQEsCcZh1rsPfDOcl8F9C/C6xbuunBehVSwRyJGGn1mvUO/rwLpf9AEWLNw14Sz61t41tBfNKh2ToDrFt5l4bx1FbhM8uFwRHWOXlQakYxak6lfEs4HlwCPFqAj86ZtQ78uSGzfJcChEH1OWhYN6uTniyF2XmJfTRl1M9Of1QXq5MfUduurcBohJy2LlkwnP33gj6SeIf4PS1JA7E6EpiwThOmrvHMUkCqwLvBp7zfhnNMDdZzvIcj0gU6AihsSC3MJ8IbpPNv1eB4rnw1zCTDJ+XesfDao7wWtXQWeC+emHug8wCNzXTzA9pJ0Rzit9QCF1nrApnDu64G2eEDml+G2CJBpgmX/bq5P8lM2E45ItqhVwHo4okOfU6GufBv4QbYzfwduGfLlrS/PlnlHr8xnBIS68mPgDIkIJpwVztOC6vNBpauAq5yq6gG4IZz/jvFbb4JlvgmGojG7wVCUUZ/3l2FVeNM84KJwPumBzgMqbkgsRHsThGS9j41MAXok7lrH88Ai8LpPvba+RaPNfe8AwF898jwsoOeN6wAAAABJRU5ErkJggg==" />
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0" transform="scale(0.015625)"/>
+								</pattern>
+								<image id="image0" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAC70lEQVR4nO2au24UMRiFv10lwAaJiwQ1BRU1RSRE6ghoCFQ08BrUNNkQSh4gvABQICTqQImgCgU0KYKIQLApWBrEUsxvdtZ4bI93ZrxzOZI1mfmPbyf28Xi80KFDhw71xDFgC/gMTBzpABhKnsZgiLvjetqM0tKScEDSqSse3KtMR8IM+gU3qkqo4ezTh55cl0tqSxRsk38KbEVpaUlYIp8IDyVPo3CapHMjC+dIOKdMwTp7AMCKXH9aOGO5njQF6y6A6tTYwlGxFVOw7gKoTnUCWDidABp3BiECvAReBOQrAwO5/rJwrAKErIvXAvKUhdZPAbUK+CyDjRSg9SNgIQSIaYpRTFBHTFNUnQoWoClTwGaCSpyBKegS4DjwhERFta1UyLovO42BHWmbzwhQ4hg3Q64p8AC46+BUjQFwDzikgBFgwyrwW9Jq6rlrJJSNdLs+St0bFv6GcJ7lqeQEsCcZh1rsPfDOcl8F9C/C6xbuunBehVSwRyJGGn1mvUO/rwLpf9AEWLNw14Sz61t41tBfNKh2ToDrFt5l4bx1FbhM8uFwRHWOXlQakYxak6lfEs4HlwCPFqAj86ZtQ78uSGzfJcChEH1OWhYN6uTniyF2XmJfTRl1M9Of1QXq5MfUduurcBohJy2LlkwnP33gj6SeIf4PS1JA7E6EpiwThOmrvHMUkCqwLvBp7zfhnNMDdZzvIcj0gU6AihsSC3MJ8IbpPNv1eB4rnw1zCTDJ+XesfDao7wWtXQWeC+emHug8wCNzXTzA9pJ0Rzit9QCF1nrApnDu64G2eEDml+G2CJBpgmX/bq5P8lM2E45ItqhVwHo4okOfU6GufBv4QbYzfwduGfLlrS/PlnlHr8xnBIS68mPgDIkIJpwVztOC6vNBpauAq5yq6gG4IZz/jvFbb4JlvgmGojG7wVCUUZ/3l2FVeNM84KJwPumBzgMqbkgsRHsThGS9j41MAXok7lrH88Ai8LpPvba+RaPNfe8AwF898jwsoOeN6wAAAABJRU5ErkJggg=="/>
 								</defs>
-							</svg>
+								</svg>
 							<p class="description">
 								Производственные<br>компании
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-6 ">
+					<div class="col-sm-6 col-10 ">
 						<div class="presentation-block">
-							<svg class="svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<rect width="100" height="100" fill="url(#pattern0)" fill-opacity="0.7"/>
-								<defs>
-								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-								<use xlink:href="#image0" transform="scale(0.01)"/>
-								</pattern>
-								<image id="image0" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAADhElEQVR4nO2dT28NURjGfy1X2oVGW0LCRgk7BN2JJmz4FOJLsLFiowsWEgtC0tjxFbquHRtKQrCxE6ptmiskrcVM6/a9d87MPXdm7nvr+SWzOHfe58yb88yZc878aUEIIYQQQgghhBBCiMFgqEDMRuVZ/F8E23y4rixEMWSIM2SIM3ZHaIqMO+IfXY3B6iHOkCHOkCHOkCHOqMqQRmTdg6KrjJhZllbuFeLq7BD5hhysJYv/i4nQzjxDzpSYiEg4FdqZZ4gVPydZqYc2S178Tte9MPGnO9SxRZ4hVvwmJ160Y9tMhvSZrgwJsQf4TTLN3dymCug2zFaUnaqbMvFN4pYbnDQVrVL8CaPnBqpbNwSsGM3xrODQJeuYKS8WTEBsZwN4Z36LMsSKPsRmJPhoyvZk36KbHvI5Oh1h2y7KkKM5lYrifDLlzMlRyJBJU/4SnY6wbbc/KzBkiL3n8i06HfHdlMezAkOG7DPln9HpiCVTzjQkRJPtc+eRgjrv64J+6EaMppkVGOohdt96wYOLdhqmnLnADhmyasr2EiaKc8iUV7ICQ4Z8NeUT0emIw6Zs23aLkCH2LuXF6HTEBVOOumt+ne0D0XtgV45mlPZBb7TAserWNTro7HW+LF2D5LZTq+ZagWO1MQ78MhXdCMQfAV52SHiB9i7bT90BYL6Dbj7dV7bumYlv0sN4fN9Utg48JHnIMgqMAeeBWZJJgE229db93TR2rA+6vcA54A7JmiBLtwTcBs6mmljdeHrsB2mbtcbeCzV43vONCdpXmaI3JoEfWTur+KRtneSMGgJuUfzdr7p1f4CbqW6W4k/xYnWb9Pw5R1Y37bS9AmZatDPAa4e6BWC6RTdN5/GoLF3r1jO2wjmSWcMayQJnEXgCXKHz2TkMXAWeprErfdAtA2+BR8Alsl/nuQw8TmOXe9CtkbTRHF0aEnPJ0hdU3dFV++ndXmfIEGfIEGfIEGfIEGdEvdKYQSlz7BLJms1UlWcps0/1EGfIEGfIEGeUOYZY6l7Rx44NsXlWMhaphzhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjijyrdOvL3JOBCohzhDhjhDhjijzDFE3x6WgHqIM2SIM2SIM2SIM2SIM/T/1OtHf8lhkJAhzpAhQgghxA7hLzCSbeSMI11aAAAAAElFTkSuQmCC"/>
-								</defs>
+							<svg class="svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M79.6875 79.4033V48.4375H56.25V79.4033H79.6875ZM62.5 54.6875H73.4375V73.1533H62.5V54.6875Z" fill="black" fill-opacity="0.6"/>
+								<path d="M52.9449 6.59164C51.6839 5.43146 50.0232 4.80365 48.31 4.83947C46.5968 4.87528 44.9638 5.57195 43.7523 6.78383L6.25 44.2862V96.875H28.125V65.625H40.625V96.875H93.75V44.1325L52.9449 6.59164ZM87.5 90.625H46.875V59.375H21.875V90.625H12.5V46.875L48.7133 11.2024V11.1914L87.5 46.875V90.625Z" fill="black" fill-opacity="0.6"/>
 								</svg>
-								<p class="description">
-									Торговые<br>сети
-								</p>
+							<p class="description">
+								Торговые<br>сети
+							</p>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-sm-6 col-10">
 						<div class="presentation-block">
-							<svg class="svg" width="100" height="100" viewBox="0 0 100 100" fill="none"
-								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<rect width="100" height="100" fill="url(#pattern0)" fill-opacity="0.7" />
-								<defs>
-									<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-										<use xlink:href="#image0" transform="scale(0.01)" />
-									</pattern>
-									<image id="image0" width="100" height="100"
-										xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAADhElEQVR4nO2dT28NURjGfy1X2oVGW0LCRgk7BN2JJmz4FOJLsLFiowsWEgtC0tjxFbquHRtKQrCxE6ptmiskrcVM6/a9d87MPXdm7nvr+SWzOHfe58yb88yZc878aUEIIYQQQgghhBBCiMFgqEDMRuVZ/F8E23y4rixEMWSIM2SIM3ZHaIqMO+IfXY3B6iHOkCHOkCHOkCHOqMqQRmTdg6KrjJhZllbuFeLq7BD5hhysJYv/i4nQzjxDzpSYiEg4FdqZZ4gVPydZqYc2S178Tte9MPGnO9SxRZ4hVvwmJ160Y9tMhvSZrgwJsQf4TTLN3dymCug2zFaUnaqbMvFN4pYbnDQVrVL8CaPnBqpbNwSsGM3xrODQJeuYKS8WTEBsZwN4Z36LMsSKPsRmJPhoyvZk36KbHvI5Oh1h2y7KkKM5lYrifDLlzMlRyJBJU/4SnY6wbbc/KzBkiL3n8i06HfHdlMezAkOG7DPln9HpiCVTzjQkRJPtc+eRgjrv64J+6EaMppkVGOohdt96wYOLdhqmnLnADhmyasr2EiaKc8iUV7ICQ4Z8NeUT0emIw6Zs23aLkCH2LuXF6HTEBVOOumt+ne0D0XtgV45mlPZBb7TAserWNTro7HW+LF2D5LZTq+ZagWO1MQ78MhXdCMQfAV52SHiB9i7bT90BYL6Dbj7dV7bumYlv0sN4fN9Utg48JHnIMgqMAeeBWZJJgE229db93TR2rA+6vcA54A7JmiBLtwTcBs6mmljdeHrsB2mbtcbeCzV43vONCdpXmaI3JoEfWTur+KRtneSMGgJuUfzdr7p1f4CbqW6W4k/xYnWb9Pw5R1Y37bS9AmZatDPAa4e6BWC6RTdN5/GoLF3r1jO2wjmSWcMayQJnEXgCXKHz2TkMXAWeprErfdAtA2+BR8Alsl/nuQw8TmOXe9CtkbTRHF0aEnPJ0hdU3dFV++ndXmfIEGfIEGfIEGfIEGdEvdKYQSlz7BLJms1UlWcps0/1EGfIEGfIEGeUOYZY6l7Rx44NsXlWMhaphzhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjhDhjijyrdOvL3JOBCohzhDhjhDhjijzDFE3x6WgHqIM2SIM2SIM2SIM2SIM/T/1OtHf8lhkJAhzpAhQgghxA7hLzCSbeSMI11aAAAAAElFTkSuQmCC" />
-								</defs>
-							</svg>
+							<svg class="svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.7">
+								<path d="M45.5496 6.6416C46.911 5.88552 48.4427 5.48877 50 5.48877C51.5573 5.48877 53.089 5.88552 54.4504 6.6416L88.8942 25.7724C89.6083 26.1695 90.2032 26.7503 90.6174 27.4546C91.0316 28.1589 91.25 28.9612 91.25 29.7783V67.522C91.2496 69.1566 90.8121 70.7614 89.9829 72.1701C89.1536 73.5788 87.9628 74.7401 86.5338 75.5337L54.4504 93.3628C53.089 94.1189 51.5573 94.5157 50 94.5157C48.4427 94.5157 46.911 94.1189 45.5496 93.3628L13.4662 75.5337C12.0379 74.7404 10.8475 73.5799 10.0183 72.1721C9.18907 70.7643 8.7512 69.1604 8.75 67.5266V29.7783C8.74997 28.9612 8.96836 28.1589 9.38257 27.4546C9.79678 26.7503 10.3917 26.1695 11.1058 25.7724L45.5542 6.6416H45.5496Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M50 50V95.8334M8.75 27.0834L50 50L8.75 27.0834ZM50 50L91.25 27.0834L50 50Z" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+								<path d="M29.375 38.5417L70.625 15.625" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M22.5 51.5029L36.25 59.1663" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+								</g>
+								</svg>
 							<p class="description">
 								Распределительные<br>центры
 							</p>
@@ -213,15 +214,53 @@
 			</div>
 			<div class="col-lg-1"></div>
 			<div class="col-lg-4">
-				<div class="block-with-img">
+				<div class="block-with-img theme_1">
 					<img src="./images/dist/pic1.jpg" alt="img">
 					<p class="px14 bold mb-3">О нашей компании</p>
-					<p class="px12 light">Don Поддон - это качество выполнения поставленных задач, внимание и качество обслуживания клиентов. Мы покумаем, ремонтируем и продаем поддоны 24/7. Так что с радостью примем ваш звонок по номеру:
-						<br><span class="semibold">8 (930) 405 - 50 - 05</span></p>
+					<p class="px12 light">Don Поддон - это качество выполнения поставленных задач, внимание и качество
+						обслуживания клиентов. Мы покумаем, ремонтируем и продаем поддоны 24/7. Так что с радостью
+						примем ваш звонок по номеру:
+						<br><span class="semibold"><a href="tel:8(930)405-50-05">8 (930) 405 - 50 - 05</a></span>
+					</p>
 				</div>
 			</div>
 		</div>
 	</div>
+</section>
+<section id="buy" class="bg-dark min100vh relative default-padding text-white pb-150">
+<img src="./images/dist/decor1.png" class="absolute1" alt="decor">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-5">
+			<h2 class="h2 heading-decor mb-2">Выкуп поддонов</h2>
+			<p class="light mb-5">
+				Вы можете привезти ваши поддоны и мы их выкупим.
+			</p>
+			<div class="row justify-content-center">
+				<div class="col-xl-10">
+					<div class="block-with-img theme_2">
+						<p class="px24 black mb-3">Вывоз<br>поддонов</p>
+						<p class="light mb-4">Просто позвоните и получите деньги.<br>
+							Больше от вас ничего не потребуется. Мы пришлем наш транспорт и грузчиков.
+						</p>
+						<p class="light mb-3">Звоните, заберем сегодня:</p>
+						<p class="px24 bold"><a href="tel:+7(930)405-50-05">+7 (930) 405 50 05</a></p>
+						<img src="./images/dist/decor2.png" alt="decor">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-1"></div>
+		<div class="col-lg-5 custom-block-1">
+			<h3 class="h3 mb-2"><span class="heading-decor custom-height-30">Ремонт и<br class="d-sm-none"> восстановление<br class="d-sm-none"> поддонов</span></h3>
+			<p class="light mb-40">Мы занимаемся ремонтом и<br> выкупом ваших поддонов 24/7. </p>
+			<div class="border video-wrapper">
+				<iframe class="video" src="https://www.youtube.com/embed/X3bVffXzXKk" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
 </section>
 
 	<script src="./js/swiper-bundle.min.js"></script>
