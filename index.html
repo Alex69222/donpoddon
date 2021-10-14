@@ -365,17 +365,27 @@
 		</div>
 		<div class="row">
 			<div class="col-xl-1"></div>
-			<div class="col-xl-4 col-lg-5">
+			<div class="col-xl-4 col-lg-6 mb-3">
 				<form class="form" action="">
 					<h4 class="h4 form-heading">
 						Оставьте заявку и мы вам перезвоним
-						<img class="form-help" src="./images/dist/decor6.png" alt="help">
+						<div class="form-help">
+							<img  src="./images/dist/decor6.png" alt="help">
+							<div class="example">
+								<div class="arrow-up"></div>
+								<p class="title">Пример заполнения:</p>
+								<p class="info">Иван</p>
+								<p class="info">+7(***)*** -**-**</p>
+								<p class="info">ivanivanov@mail.ru</p>
+							</div>
+						</div>
+						
 					</h4>
 					<div class="row">
 						<div class="col-12">
 							<input class="form-input" type="text" placeholder="Ваше имя" required></div>
 						<div class="col-12">
-							<input class="form-input" type="tel" placeholder="Телефон" required></div>
+							<input class="form-input" type="tel" placeholder="Телефон" minlength="11" required></div>
 						<div class="col-12">
 							<input class="form-input" type="email" placeholder="Email"></div>
 							<div class="col-md-5">
@@ -386,6 +396,13 @@
 							</div>
 					</div>
 				</form>
+			</div>
+			<div class="d-none d-xl-block col-xl-1"></div>
+			<div class="col-xl-5 col-lg-6 map-col">
+				<h2 class="h2"><span class="heading-decor custom-height-48">Схема проезда</span></h2>
+				<div class="map">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A92f3a2917bdbf2a6a031369309165bd8a6ab850772bdfc6f0986d886ea56c1c8&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
+				</div>
 			</div>
 		</div>
 	</div>
