@@ -19,7 +19,23 @@
 	<meta property="og:image" content="images/dist/preview.jpg">
 	<link rel="stylesheet" href="./css/swiper.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
-
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A92f3a2917bdbf2a6a031369309165bd8a6ab850772bdfc6f0986d886ea56c1c8&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true/?apikey=efb2cef9-34b3-443b-b74c-60803ca0ebd2"></script>
+<script>
+	ymaps.ready(init);
+	  function init(){
+		  // Создание карты.
+		  var myMap = new ymaps.Map("map", {
+			  // Координаты центра карты.
+			  // Порядок по умолчанию: «широта, долгота».
+			  // Чтобы не определять координаты центра карты вручную,
+			  // воспользуйтесь инструментом Определение координат.
+			  center: [55.76, 37.64],
+			  // Уровень масштабирования. Допустимые значения:
+			  // от 0 (весь мир) до 19.
+			  zoom: 7
+		  });
+	  }
+</script>
 </head>
 
 <body>
@@ -400,8 +416,7 @@
 			<div class="d-none d-xl-block col-xl-1"></div>
 			<div class="col-xl-5 col-lg-6 map-col">
 				<h2 class="h2"><span class="heading-decor custom-height-48">Схема проезда</span></h2>
-				<div class="map">
-					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A92f3a2917bdbf2a6a031369309165bd8a6ab850772bdfc6f0986d886ea56c1c8&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
+				<div id="map">
 				</div>
 			</div>
 		</div>
