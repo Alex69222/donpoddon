@@ -19,7 +19,7 @@
 	<meta property="og:image" content="images/dist/preview.jpg">
 	<link rel="stylesheet" href="./css/swiper.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
-
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=efb2cef9-34b3-443b-b74c-60803ca0ebd2" type="text/javascript"></script>
 </head>
 
 <body>
@@ -401,7 +401,6 @@
 			<div class="col-xl-5 col-lg-6 map-col">
 				<h2 class="h2"><span class="heading-decor custom-height-48">Схема проезда</span></h2>
 				<div id="map">
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A92f3a2917bdbf2a6a031369309165bd8a6ab850772bdfc6f0986d886ea56c1c8&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true;apikey=efb2cef9-34b3-443b-b74c-60803ca0ebd2"></script>
 				</div>
 			</div>
 		</div>
@@ -411,7 +410,7 @@
 	
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>
-	<!-- <script>
+	<script>
 		ymaps.ready(init);
 	  function init(){
 		  // Создание карты.
@@ -420,13 +419,35 @@
 			  // Порядок по умолчанию: «широта, долгота».
 			  // Чтобы не определять координаты центра карты вручную,
 			  // воспользуйтесь инструментом Определение координат.
-			  center: [55.76, 37.64],
+			  center: [51.847876, 39.213768],
 			  // Уровень масштабирования. Допустимые значения:
 			  // от 0 (весь мир) до 19.
-			  zoom: 7
-		  });
+			  zoom: 18
+		  }),
+		  // Создаем геообъект с типом геометрии "Точка".
+		  myGeoObject = new ymaps.GeoObject({
+            // Описание геометрии.
+            geometry: {
+                type: "Point",
+                coordinates: [51.847876, 39.213768]
+            },
+            // Свойства.
+            properties: {
+                // Контент метки.
+                iconContent: 'DON ПОДДОН',
+                hintContent: 'Продаем и покупаем поддоны'
+            }
+        },
+		{
+            // Опции.
+            // Иконка метки будет растягиваться под размер ее содержимого.
+            preset: 'islands#blackStretchyIcon',
+            // Метку можно перемещать.
+            // draggable: true
+        });
+		myMap.geoObjects.add(myGeoObject);
 	  }
-	</script> -->
+	</script>
 
 </body>
 </html>
