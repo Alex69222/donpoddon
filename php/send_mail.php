@@ -30,7 +30,7 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'donpoddon-org@yandex.ru'; // Логин на почте
+    $mail->Username   = 'donpoddon-org'; // Логин на почте
     $mail->Password   = 'rmyuyibsqsnytswu'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
