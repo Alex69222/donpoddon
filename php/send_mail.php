@@ -30,11 +30,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'donpoddon-org@donpoddon.beget.tech/'; // Логин на почте
+    $mail->Username   = 'donpoddon-org@yandex.ru'; // Логин на почте
     $mail->Password   = 'rmyuyibsqsnytswu'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('donpoddon-org@yandex.ru', 'DON ПОДДОН'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('donpoddon-org@donpoddon.beget.tech', 'DON ПОДДОН'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('bbqsauce108@gmail.com');  
