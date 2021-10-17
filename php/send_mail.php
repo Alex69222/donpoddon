@@ -37,7 +37,7 @@ try {
     $mail->setFrom('donpoddon-org@yandex.ru', 'DON ПОДДОН'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('bbqsauce108@gmail.com');  
+    $mail->addAddress('helloxam3000@gmail.com');  
 
     // Прикрипление файлов к письму
 // if (!empty($file['name'][0])) {
